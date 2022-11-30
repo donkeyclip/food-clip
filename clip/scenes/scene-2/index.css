@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: grey;
+}
+.content{
+  width: 80%;
+  height: 100%;
+  background-color: aqua;
+}  
+.side-bar{
+  position: absolute;
+  left: 80%;
+  width: 20%;
+  height: 100%;
+  background-color: rgb(6, 134, 134);
+}
+
+.dish{
+  display: flex;
+  flex-direction: row;
+}
+.info{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 225px;
+  height: 60%;
+  top: 20%;
+  left: 10%;
+}
+
+.name-wrapper, .description-wrapper{
+  position: relative;
+  overflow: hidden; 
+  border: 1px solid red;
+}
+
+.name,.description{
+  position: relative;
+  top: -120%;
+}
+
+.price-wrapper{
+  position: relative;
+}
+
+.price{
+  position: relative;
+  left: 30%;
+  top: 30px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:80px;
+}
+.offer{
+  position: relative;
+  left: 55%;
+  top: 0;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:50px;
+}
