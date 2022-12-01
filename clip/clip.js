@@ -6,6 +6,7 @@ import scene1 from "./scenes/scene-1";
 import scene2 from "./scenes/scene-2";
 import initParamsValidationRules from "./initParamsValidationRules";
 import { topMove } from "./library/topMove";
+import { leftMove } from "./library/leftMove";
 
 export const clip = new HTMLClip({
   html,
@@ -20,5 +21,6 @@ export const clip = new HTMLClip({
 });
 
 clip.addIncident(scene1, 0);
-//clip.addIncident(scene2,0);
-//clip.addIncident(topMove("-100%","#scene1",500),1000);
+clip.addIncident(scene2,1000);
+//clip.addIncident(leftMove("-100%","#scene1",500),1000);
+clip.addIncident(topMove("100%","#scene1",500),1000);

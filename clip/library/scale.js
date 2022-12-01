@@ -1,9 +1,11 @@
 import { CSSEffect } from "@donkeyclip/motorcortex";
-export const topMove = (top,selector, duration, delay=0,easing = "linear") =>
+export const scale = (scale,selector, duration, delay=0,easing = "linear") =>
   new CSSEffect(
     {
       animatedAttrs: {
-        top
+        transform:{
+            scale
+        },
       },
     },
     {

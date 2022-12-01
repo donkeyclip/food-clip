@@ -1,9 +1,10 @@
 import { HTMLClip } from "@donkeyclip/motorcortex";
 import html from "./index.html";
 import css from "./index.css";
+import { opacity } from "../../library/opacity";
 import { loadPlugin } from "@donkeyclip/motorcortex";
-import TitlesPlugin from "@donkeyclip/motorcortex-animetitles";
-const Titles = loadPlugin(TitlesPlugin);
+import BackgroundsDefinition from "@donkeyclip/motorcortex-backgrounds";
+const Plugin = loadPlugin(BackgroundsDefinition);
 
 
 const clip = new HTMLClip({
@@ -19,22 +20,20 @@ const clip = new HTMLClip({
   },
 });
 
-const rotateReveal = 
-  new Titles.RotatedTextReveal({
-    text: "@initParams.name",
-    width: 600,
-    color: "black",
-    fontFamily: "Righteous",
-    fontSize: 40,
-    stagger: "0, 300",
-    exitTime: 1000,
+const Ripples = new Plugin.Ripples(
+  {
+    width: 800,
+    height: 450,
+    backgroundColor: "#2b2a29",
+    circleSize: 700,
+    circleColor: "#fae350",
   },
-  { duration: 2000, 
-    selector: ".p", 
+  {
+    selector: ".container",
+    duration: 3000,
   }
-  );
-
-
-clip.addIncident(rotateReveal,1000);
+);
+clip.addIncident(Ripples,0);
+clip.addIncident(opacity(1,".letter",300,"@stagger(0,500)"),200)
 
 export default clip;
