@@ -2,7 +2,6 @@ export default [
   {
     value: {
       name: "John",
-      tt: "test",
       dishes:[
         {
           name:"Pizza Special",
