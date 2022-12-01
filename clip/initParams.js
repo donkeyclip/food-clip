@@ -20,7 +20,7 @@ export default [
         },
         {
           name:"Pizza Pepperoni",
-          image:"https://elisavetampatzidou.github.io/food-promo-clip/server/assets/pizza-special.png",
+          image:"https://elisavetampatzidou.github.io/food-promo-clip/server/assets/pizza-pepperoni.png",
           description:"With tomato sauce, gouda, pepperoni sausage",
           price:"7.80€",
           offer:"-1€"
