@@ -68,6 +68,7 @@
           </div>
           <div class="word">
             <div class="l" mc-for="key,item" mc-of="initParams.name">
+              <div mc-if="item ===' '"> &nbsp;</div>
               {{item}}
             </div>
             <div class="l">,</div>
@@ -148,7 +149,9 @@
             <div class="l">y</div>
           </div>
           <div class="word">
+
             <div class="l" mc-for="key,item" mc-of="initParams.name">
+              <div mc-if="item ===' '"> &nbsp;</div>
               {{item}}
             </div>
             <div class="l">,</div>
@@ -230,6 +233,7 @@
           </div>
           <div class="word">
             <div class="l" mc-for="key,item" mc-of="initParams.name">
+              <div mc-if="item ===' '"> &nbsp;</div>
               {{item}}
             </div>
             <div class="l">,</div>
