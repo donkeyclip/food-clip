@@ -28,7 +28,6 @@ export const clip = new HTMLClip({
   fonts: [
     {
       type: `google-font`,
-      // https://fonts.google.com/specimen/Shojumaru
       src: `https://fonts.googleapis.com/css2?family=Nerko+One&family=Rye&family=Shojumaru&family=IBM+Plex+Sans+Arabic&family=Lobster&display=swap'`,
     },
   ],
@@ -54,7 +53,7 @@ const startTime3 = startTime+startTime2+3500;
 clip.addIncident(scale(2,".dish:nth-child(1) .image",50,0,"easeOutSine"),startTime);
 clip.addIncident(hexagonCircle(800,450,50,".dish:nth-child(1) .background1"),startTime);
 clip.addIncident(ripples(".dish:nth-child(1) .background2", 7000),startTime);
-clip.addIncident(leftMove("40%",".dish:nth-child(1) .info",800,0,"easeOutBounce"),200+startTime);
+clip.addIncident(leftMove("55%",".dish:nth-child(1) .info",800,0,"easeOutBounce"),200+startTime);
 clip.addIncident(leftMove("0%",".dish:nth-child(1) .description",500,0,"easeOutSine"),1000+startTime);
 clip.addIncident(rotatedLineReveal("@initParams.dishes[0].brand","@initParams.city",".restaurant"),startTime+1000);
 clip.addIncident(svgDraw(1,"svg path",2000,"@stagger(0,300)"),3000+startTime);
@@ -77,7 +76,7 @@ clip.addIncident(opacity(1,".top-circle",1),7000+startTime+1000);
 clip.addIncident(scale(2,".dish:nth-child(2) .image",50,0,"easeOutSine"),startTime2);
 clip.addIncident(hexagonCircle(800,450,50,".dish:nth-child(2) .background1"),startTime2);
 clip.addIncident(ripples(".dish:nth-child(2) .background2", 7000),startTime2);
-clip.addIncident(leftMove("40%",".dish:nth-child(2) .info",800,0,"easeOutBounce"),200+startTime2);
+clip.addIncident(leftMove("55%",".dish:nth-child(2) .info",800,0,"easeOutBounce"),200+startTime2);
 clip.addIncident(leftMove("0%",".dish:nth-child(2) .description",500,0,"easeOutSine"),1000+startTime2);
 clip.addIncident(rotatedLineReveal("@initParams.dishes[1].brand","@initParams.city",".restaurant"),startTime2+1000);
 clip.addIncident(svgDraw(1,"svg path",2000,"@stagger(0,300)"),3000+startTime2);
@@ -100,7 +99,7 @@ clip.addIncident(opacity(1,".top-circle",1),7000+startTime2+1000);
 clip.addIncident(scale(2,".dish:nth-child(3) .image",50,0,"easeOutSine"),startTime3);
 clip.addIncident(hexagonCircle(800,450,50,".dish:nth-child(3) .background1"),startTime3);
 clip.addIncident(ripples(".dish:nth-child(3) .background2", 7000),startTime3);
-clip.addIncident(leftMove("40%",".dish:nth-child(3) .info",800,0,"easeOutBounce"),200+startTime3);
+clip.addIncident(leftMove("55%",".dish:nth-child(3) .info",800,0,"easeOutBounce"),200+startTime3);
 clip.addIncident(leftMove("0%",".dish:nth-child(3) .description",500,0,"easeOutSine"),1000+startTime3);
 clip.addIncident(rotatedLineReveal("@initParams.dishes[2].brand","@initParams.city",".restaurant"),startTime3+1000);
 clip.addIncident(svgDraw(1,"svg path",2000,"@stagger(0,300)"),3000+startTime3);
