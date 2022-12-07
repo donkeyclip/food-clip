@@ -55,7 +55,9 @@
     "webpack-dev-server": "4.11.1"
   },
   "dependencies": {
+    "@donkeyclip/motorcortex-anime": "^3.1.1",
     "@donkeyclip/motorcortex-animetitles": "^1.3.0",
-    "@donkeyclip/motorcortex-backgrounds": "^0.3.0"
+    "@donkeyclip/motorcortex-backgrounds": "^0.3.0",
+    "@donkeyclip/motorcortex-svgdraw": "^1.2.0"
   }
 }

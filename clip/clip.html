@@ -1,4 +1,230 @@
 <div id="root">
-    <div id="scene2"></div>
-    <div id="scene1"></div>
+  <div mc-if="initParams.category ==='Italian'" class="italian">
+      <div class="container3">
+        <div class="plate" mc-for="key,item" mc-of="initParams.dishes">
+          <div class="background"></div>
+          <div class="name">{{item.name}}</div>
+          <div class="image" style="
+            background-image: url({{item.image}});
+            width: 200px;
+            height: 200px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;">
+            </div>
+            <div class="offer-wrapper">
+              <div class="offer-border"></div>
+              <div class="offer">ONLY {{item.offer}}€</div>
+            </div>
+            <div class="top"><a href="https://motorcortexjs.com/"><span>BUY NOW</span></a></div>
+        </div>
+      </div>
+      <div class="container2">
+        <div class="dish" mc-for="key,item" mc-of="initParams.dishes">
+            <div class="background background1"></div>
+            <div class="background background2"></div>
+            <div class="restaurant"></div>
+            <div class="image" style="position: absolute;
+            bottom: 0;
+            left: 0;
+            background-image: url({{item.image}});
+            width: 225px;
+            height: 225px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transform: scale(0);">
+            </div>
+            <div class="info">
+                <div class="name-wrapper">
+                    <div class="name">{{item.name}}</div>
+                </div>
+                <div class="description-wrapper">
+                    <div class="description">{{item.description}}</div>
+                </div> 
+            </div>
+            <div class="price-wrapper">
+                <div class="price">{{item.price}}€</div>
+                <div class="offer">ONLY {{item.offer}}€</div>
+            </div>
+        </div>
+        <svg width="800" height="450.00000000000006" xmlns="http://www.w3.org/2000/svg">
+          <path stroke="#ffffff" id="svg_2" fill="none" d="M507 315.5a95.5 95.5 0 1 0 191 0a95.5 95.5 0 1 0 -191 0" />
+          <path stroke="#ffffff" id="svg_8" fill="none" d="M513 315.5a89.5 88.5 0 1 0 179 0a89.5 88.5 0 1 0 -179 0" />
+      </svg>
+      </div>
+      <div class="container1">
+        <div class="welcome">
+          <div class="word">
+            <div class="l">H</div>
+            <div class="l">e</div>
+            <div class="l">y</div>
+          </div>
+          <div class="word">
+            <div class="l" mc-for="key,item" mc-of="initParams.name">
+              {{item}}
+            </div>
+            <div class="l">,</div>
+          </div>
+        </div>
+        <div class="quote quote1"></div>
+        <div class="quote quote2"></div>
+        <div class="quote quote3a"></div>
+        <div class="quote quote3b"></div>
+        <div class="quote quote4"></div>
+      </div>
+      <div class="top-circle"></div>
+    </div>
+    <div mc-if="initParams.category ==='Chinese'" class="chinese">
+      <div class="container3">
+        <div class="plate" mc-for="key,item" mc-of="initParams.dishes">
+          <div class="background"></div>
+          <div class="name">{{item.name}}</div>
+          <div class="image" style="
+            background-image: url({{item.image}});
+            width: 200px;
+            height: 200px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;">
+            </div>
+            <div class="offer-wrapper">
+              <div class="offer-border"></div>
+              <div class="offer">ONLY {{item.offer}}€</div>
+            </div>
+            <div class="top"><a href="https://motorcortexjs.com/"><span>BUY NOW</span></a></div>
+        </div>
+      </div>
+      <div class="container2">
+        <div class="dish" mc-for="key,item" mc-of="initParams.dishes">
+            <div class="background background1"></div>
+            <div class="background background2"></div>
+            <div class="restaurant"></div>
+            <div class="image" style="position: absolute;
+            bottom: 0;
+            left: 0;
+            background-image: url({{item.image}});
+            width: 225px;
+            height: 225px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transform: scale(0);">
+            </div>
+            <div class="info">
+                <div class="name-wrapper">
+                    <div class="name">{{item.name}}</div>
+                </div>
+                <div class="description-wrapper">
+                    <div class="description">{{item.description}}</div>
+                </div> 
+            </div>
+            <div class="price-wrapper">
+                <div class="price">{{item.price}}€</div>
+                <div class="offer">ONLY {{item.offer}}€</div>
+            </div>
+        </div>
+        <svg width="800" height="450.00000000000006" xmlns="http://www.w3.org/2000/svg">
+          <path stroke="#ffffff" id="svg_2" fill="none" d="M507 315.5a95.5 95.5 0 1 0 191 0a95.5 95.5 0 1 0 -191 0" />
+          <path stroke="#ffffff" id="svg_8" fill="none" d="M513 315.5a89.5 88.5 0 1 0 179 0a89.5 88.5 0 1 0 -179 0" />
+      </svg>
+      </div>
+      <div class="container1">
+        <div class="welcome">
+          <div class="word">
+            <div class="l">H</div>
+            <div class="l">e</div>
+            <div class="l">y</div>
+          </div>
+          <div class="word">
+            <div class="l" mc-for="key,item" mc-of="initParams.name">
+              {{item}}
+            </div>
+            <div class="l">,</div>
+          </div>
+        </div>
+        <div class="quote quote1"></div>
+        <div class="quote quote2"></div>
+        <div class="quote quote3a"></div>
+        <div class="quote quote3b"></div>
+        <div class="quote quote4"></div>
+      </div>
+      <div class="top-circle"></div>
+    </div>
+    <div mc-if="initParams.category ==='Grill'" class="grill">
+      <div class="container3">
+        <div class="plate" mc-for="key,item" mc-of="initParams.dishes">
+          <div class="background"></div>
+          <div class="name">{{item.name}}</div>
+          <div class="image" style="
+            background-image: url({{item.image}});
+            width: 200px;
+            height: 200px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;">
+            </div>
+            <div class="offer-wrapper">
+              <div class="offer-border"></div>
+              <div class="offer">ONLY {{item.offer}}€</div>
+            </div>
+            <div class="top"><a href="https://motorcortexjs.com/"><span>BUY NOW</span></a></div>
+        </div>
+      </div>
+      <div class="container2">
+        <div class="dish" mc-for="key,item" mc-of="initParams.dishes">
+            <div class="background background1"></div>
+            <div class="background background2"></div>
+            <div class="restaurant"></div>
+            <div class="image" style="position: absolute;
+            bottom: 0;
+            left: 0;
+            background-image: url({{item.image}});
+            width: 225px;
+            height: 225px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transform: scale(0);">
+            </div>
+            <div class="info">
+                <div class="name-wrapper">
+                    <div class="name">{{item.name}}</div>
+                </div>
+                <div class="description-wrapper">
+                    <div class="description">{{item.description}}</div>
+                </div> 
+            </div>
+            <div class="price-wrapper">
+                <div class="price">{{item.price}}€</div>
+                <div class="offer">ONLY {{item.offer}}€</div>
+            </div>
+        </div>
+        <svg width="800" height="450.00000000000006" xmlns="http://www.w3.org/2000/svg">
+          <path stroke="#ffffff" id="svg_2" fill="none" d="M507 315.5a95.5 95.5 0 1 0 191 0a95.5 95.5 0 1 0 -191 0" />
+          <path stroke="#ffffff" id="svg_8" fill="none" d="M513 315.5a89.5 88.5 0 1 0 179 0a89.5 88.5 0 1 0 -179 0" />
+      </svg>
+      </div>
+      <div class="container1">
+        <div class="welcome">
+          <div class="word">
+            <div class="l">H</div>
+            <div class="l">e</div>
+            <div class="l">y</div>
+          </div>
+          <div class="word">
+            <div class="l" mc-for="key,item" mc-of="initParams.name">
+              {{item}}
+            </div>
+            <div class="l">,</div>
+          </div>
+        </div>
+        <div class="quote quote1"></div>
+        <div class="quote quote2"></div>
+        <div class="quote quote3a"></div>
+        <div class="quote quote3b"></div>
+        <div class="quote quote4"></div>
+      </div>
+      <div class="top-circle"></div>
+    </div>
 </div>
