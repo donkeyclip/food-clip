@@ -10,7 +10,7 @@ export default [
           image:"https://elisavetampatzidou.github.io/food-promo-clip/server/assets/pizza-special.png",
           description:"With tomato sauce, gouda, mushrooms, pepper & bacon",
           price:"8.30",
-          offer:"17.10",
+          offer:"7.10",
           brand:"Pizza Fan",
         },
         {

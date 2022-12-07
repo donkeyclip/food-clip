@@ -13,6 +13,7 @@ import { rotatedLineReveal } from "./library/rotatedLineReveal";
 import { svgDraw } from "./library/svgDraw";
 import { hexagonCircle } from "./library/hexagonCircle";
 import { ripples } from "./library/ripples";
+import { line } from "./library/line";
 
 export const clip = new HTMLClip({
   html,
@@ -58,6 +59,7 @@ clip.addIncident(leftMove("0%",".dish:nth-child(1) .description",500,0,"easeOutS
 clip.addIncident(rotatedLineReveal("@initParams.dishes[0].brand","@initParams.city",".restaurant"),startTime+1000);
 clip.addIncident(svgDraw(1,"svg path",2000,"@stagger(0,300)"),3000+startTime);
 clip.addIncident(scale(1,".dish:nth-child(1) .price-wrapper",800),3500+startTime);
+clip.addIncident(line(".dish:nth-child(1) .price",200),5200+startTime);
 clip.addIncident(opacity(0,".dish:nth-child(1) .offer",200),5500+startTime);
 clip.addIncident(opacity(1,".dish:nth-child(1) .offer",200),5700+startTime);
 clip.addIncident(rotate("8deg",".dish:nth-child(1) .image",3500),50+startTime);
@@ -80,6 +82,7 @@ clip.addIncident(leftMove("0%",".dish:nth-child(2) .description",500,0,"easeOutS
 clip.addIncident(rotatedLineReveal("@initParams.dishes[1].brand","@initParams.city",".restaurant"),startTime2+1000);
 clip.addIncident(svgDraw(1,"svg path",2000,"@stagger(0,300)"),3000+startTime2);
 clip.addIncident(scale(1,".dish:nth-child(2) .price-wrapper",800),3500+startTime2);
+clip.addIncident(line(".dish:nth-child(2) .price",200),5200+startTime2);
 clip.addIncident(opacity(0,".dish:nth-child(2) .offer",200),5500+startTime2);
 clip.addIncident(opacity(1,".dish:nth-child(2) .offer",200),5700+startTime2);
 clip.addIncident(rotate("8deg",".dish:nth-child(2) .image",3500),50+startTime2);
@@ -102,6 +105,7 @@ clip.addIncident(leftMove("0%",".dish:nth-child(3) .description",500,0,"easeOutS
 clip.addIncident(rotatedLineReveal("@initParams.dishes[2].brand","@initParams.city",".restaurant"),startTime3+1000);
 clip.addIncident(svgDraw(1,"svg path",2000,"@stagger(0,300)"),3000+startTime3);
 clip.addIncident(scale(1,".dish:nth-child(3) .price-wrapper",800),3500+startTime3);
+clip.addIncident(line(".dish:nth-child(3) .price",200),5200+startTime3);
 clip.addIncident(opacity(0,".dish:nth-child(3) .offer",200),5500+startTime3);
 clip.addIncident(opacity(1,".dish:nth-child(3) .offer",200),5700+startTime3);
 clip.addIncident(rotate("8deg",".dish:nth-child(3) .image",3500),50+startTime3);
