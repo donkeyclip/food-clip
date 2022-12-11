@@ -1,19 +1,19 @@
 import { HTMLClip } from "@donkeyclip/motorcortex";
-import html from "./clip.html";
 import css from "./clip.css";
+import html from "./clip.html";
 import initParams from "./initParams";
 import initParamsValidationRules from "./initParamsValidationRules";
-import { topMove } from "./library/topMove";
-import { leftMove } from "./library/leftMove";
-import { opacity } from "./library/opacity";
-import { scale } from "./library/scale";
-import { rotate } from "./library/rotate";
-import { textReveal } from "./library/textReveal";
-import { rotatedLineReveal } from "./library/rotatedLineReveal";
-import { svgDraw } from "./library/svgDraw";
 import { hexagonCircle } from "./library/hexagonCircle";
-import { ripples } from "./library/ripples";
+import { leftMove } from "./library/leftMove";
 import { line } from "./library/line";
+import { opacity } from "./library/opacity";
+import { ripples } from "./library/ripples";
+import { rotate } from "./library/rotate";
+import { rotatedLineReveal } from "./library/rotatedLineReveal";
+import { scale } from "./library/scale";
+import { svgDraw } from "./library/svgDraw";
+import { textReveal } from "./library/textReveal";
+import { topMove } from "./library/topMove";
 
 export const clip = new HTMLClip({
   html,
