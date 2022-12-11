@@ -1,7 +1,7 @@
 import { loadPlugin } from "@donkeyclip/motorcortex";
 import TitlesPlugin from "@donkeyclip/motorcortex-animetitles";
 const Titles = loadPlugin(TitlesPlugin);
-export const textReveal = (ff, text, selector, duration) =>
+export const textReveal = (ff, text, selector, duration, id) =>
   new Titles.TextReveal(
     {
       text,
@@ -13,5 +13,5 @@ export const textReveal = (ff, text, selector, duration) =>
       wordSplit: false,
       exitTime: 1000,
     },
-    { duration, selector }
+    { duration, selector, id }
   );
