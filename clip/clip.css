@@ -287,18 +287,18 @@
 
 @keyframes drop-shadow-shade {
   0% {
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transform: rotateX(0deg) rotateY(0deg) ;
   }
   25% {
-    transform: rotateX(-3deg) rotateY(10deg) rotateZ(7deg);
+    transform:  rotate(-3deg) ;
     filter: drop-shadow(10px 5px 15px rgb(0, 0, 0));
   }
   75% {
-    transform: rotateX(-3deg) rotateY(-10deg) rotateZ(-7deg);
+    transform:  rotate(3deg) ;
     filter: drop-shadow(-10px 5px 15px rgb(0, 0, 0));
   }
   100% {
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transform: rotateX(0deg) rotateY(0deg) ;
   }
 }
 @keyframes rot {
