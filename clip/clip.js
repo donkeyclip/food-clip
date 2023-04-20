@@ -1,4 +1,4 @@
-import { HTMLClip } from "@donkeyclip/motorcortex";
+import { HTMLClip, setCSSCore } from "@donkeyclip/motorcortex";
 import html from "./clip.html";
 import css from "./clip.css";
 import initParams from "./initParams";
@@ -14,6 +14,8 @@ import { svgDraw } from "./library/svgDraw";
 import { hexagonCircle } from "./library/hexagonCircle";
 import { ripples } from "./library/ripples";
 import { line } from "./library/line";
+import AnimePluginDefinition from "@donkeyclip/motorcortex-anime";
+// setCSSCore(AnimePluginDefinition.CSSEffect);
 
 export const clip = new HTMLClip({
   html,
@@ -36,6 +38,11 @@ export const clip = new HTMLClip({
 clip.addIncident(hexagonCircle(800, 450, 50, ".container1"), 0);
 
 clip.addIncident(
+  textReveal("Palatino, serif", "For you that love", ".quote1a", 1500, "test5"),
+  503
+);
+
+clip.addIncident(
   textReveal(
     "Palatino, serif",
     "@initParams.category",
@@ -43,7 +50,7 @@ clip.addIncident(
     1500,
     "test3"
   ),
-  500
+  502
 );
 clip.addIncident(
   textReveal(
@@ -53,14 +60,10 @@ clip.addIncident(
     1500,
     "test1"
   ),
-  500
+  501
 );
 clip.addIncident(
   textReveal("Palatino, serif", "near you", ".quote3", 1500, "test2"),
-  500
-);
-clip.addIncident(
-  textReveal("Palatino, serif", "For you that love", ".quote1a", 1500, "test5"),
   500
 );
 
@@ -82,7 +85,7 @@ clip.addIncident(
 );
 clip.addIncident(ripples(".dish:nth-child(1) .background2", 7000), startTime);
 clip.addIncident(
-  leftMove("40%", ".dish:nth-child(1) .info", 800, 0, "easeOutBounce"),
+  leftMove("40%", ".dish:nth-child(1) .info", 800, 0, "easeOutBounce", "100%"),
   200 + startTime
 );
 clip.addIncident(
@@ -144,7 +147,7 @@ clip.addIncident(
 );
 clip.addIncident(ripples(".dish:nth-child(2) .background2", 7000), startTime2);
 clip.addIncident(
-  leftMove("40%", ".dish:nth-child(2) .info", 800, 0, "easeOutBounce"),
+  leftMove("40%", ".dish:nth-child(2) .info", 800, 0, "easeOutBounce", "100%"),
   200 + startTime2
 );
 clip.addIncident(
@@ -206,7 +209,7 @@ clip.addIncident(
 );
 clip.addIncident(ripples(".dish:nth-child(3) .background2", 7000), startTime3);
 clip.addIncident(
-  leftMove("40%", ".dish:nth-child(3) .info", 800, 0, "easeOutBounce"),
+  leftMove("40%", ".dish:nth-child(3) .info", 800, 0, "easeOutBounce", "100%"),
   200 + startTime3
 );
 clip.addIncident(
