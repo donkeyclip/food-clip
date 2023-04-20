@@ -5,16 +5,16 @@
   position: absolute;
 }
 
-.italian{
-  font-family: 'Nerko One', cursive;
+.italian {
+  font-family: "Nerko One", cursive;
 }
 
-.chinese{
-  font-family: 'Shojumaru', cursive;
+.chinese {
+  font-family: "Shojumaru", cursive;
 }
 
-.grill{
-  font-family: 'Rye', cursive;
+.grill {
+  font-family: "Rye", cursive;
 }
 
 /* conatiner1 */
@@ -27,7 +27,7 @@
   background-color: rgba(255, 20, 2);
 }
 
-.welcome{
+.welcome {
   display: flex;
   flex-direction: row;
   gap: 6px;
@@ -39,52 +39,50 @@
   transform: translateX(-50%);
 }
 
-.word{
+.word {
   display: flex;
   flex-direction: row;
 }
 
-.l{
+.l {
   opacity: 0;
 }
 
-.quote{
+.quote {
   position: absolute;
   color: rgb(250, 227, 80);
 }
 
-.quote1a{
+.quote1a {
   position: absolute;
   top: 41%;
   left: 8%;
 }
 
-.quote1b{
+.quote1b {
   position: absolute;
   top: 41%;
   left: 35.3% !important;
 }
 
-
-.quote2{
+.quote2 {
   position: absolute;
   top: 49%;
   left: 18%;
 }
 
-.quote3{
+.quote3 {
   position: absolute;
   top: 57%;
   left: 18%;
 }
 
-
-.grill .quote1a{
+.grill .quote1a {
   position: absolute;
   top: 41%;
   left: 11%;
 }
-.grill .quote1b{
+.grill .quote1b {
   position: absolute;
   top: 41%;
   left: 41%;
@@ -99,14 +97,14 @@
   background-color: #fff;
 }
 
-.dish{
+.dish {
   position: absolute;
   width: 100%;
   height: 100%;
   opacity: 0;
 }
 
-.info{
+.info {
   padding-top: 30px;
   position: absolute;
   display: flex;
@@ -120,98 +118,96 @@
   text-align: center;
 }
 
-.name{
+.name {
   font-size: 48px;
   /* font-weight: bolder; */
   line-height: 100%;
   color: rgb(250, 227, 80);
 }
 
-.description-wrapper{
+.description-wrapper {
   position: relative;
   overflow: hidden;
 }
 
-.description{
+.description {
   color: white;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
   font-size: 14px;
   position: relative;
   left: 100%;
 }
 
-.container2 .price-wrapper{
+.container2 .price-wrapper {
   position: absolute;
   bottom: 9%;
   right: 13%;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  width:165px;
+  width: 165px;
   display: flex;
   flex-direction: column;
-  justify-content:center ;
+  justify-content: center;
   align-items: center;
   gap: 0px;
   /* font-weight: bolder; */
-  padding:10px;
- transform: scale(0);
+  padding: 10px;
+  transform: scale(0);
 }
 
-.price{
+.price {
   color: #fff;
   font-size: 18px;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
-.offer{
-  color:rgb(250, 227, 80);
+.offer {
+  color: rgb(250, 227, 80);
   font-size: 40px;
   text-align: center;
   line-height: 40px;
-} 
+}
 
-
-.background{
+.background {
   position: absolute;
-  width:100%;
+  width: 100%;
   height: 100%;
 }
 
-.circles-svg{
+.circles-svg {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.container2 .image{
-  filter: drop-shadow(10px 5px 15px rgb(0, 0, 0) );
+.container2 .image {
+  filter: drop-shadow(10px 5px 15px rgb(0, 0, 0));
 }
 
-
-.restaurant{
+.restaurant {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   top: 15%;
-  left:15%;
+  left: 15%;
 }
-.stars-wrapper{
+.stars-wrapper {
   position: absolute;
   top: 21%;
-  left:3.7%;
-  width:100px;
+  left: 3.7%;
+  width: 100px;
   overflow: hidden;
   height: 50px;
 }
-.stars{
+.stars {
   position: absolute;
   top: -100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 1px;
-  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
   font-size: small;
 }
 
@@ -220,7 +216,7 @@
   transform: scale(0.8);
 }
 
-.top-circle{
+.top-circle {
   position: absolute;
   bottom: -80%;
   left: -50%;
@@ -233,7 +229,7 @@
 }
 
 /* container3 */
-.container3{
+.container3 {
   width: 100%;
   height: 100%;
   display: flex;
@@ -244,7 +240,7 @@
   text-align: center;
 }
 
-.plate{
+.plate {
   position: relative;
   top: -100%;
   width: 33.33%;
@@ -261,11 +257,11 @@
   z-index: 0;
 }
 
-.container3 .name{
+.container3 .name {
   z-index: 1;
   font-size: 30px;
 }
-.container3 .offer-wrapper{
+.container3 .offer-wrapper {
   z-index: 1;
   width: 130px;
   border-radius: 50%;
@@ -276,7 +272,7 @@
   position: relative;
 }
 
-.offer-border{
+.offer-border {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -285,56 +281,67 @@
   animation: rot 4s infinite;
 }
 
-.container3 .offer{
+.container3 .offer {
   font-size: 30px;
 }
 
-@keyframes Opa {
-  0%    { transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) ; }
-  25%   { transform:rotateX(-3deg) rotateY(10deg) rotateZ(7deg);
-          filter: drop-shadow(10px 5px 15px rgb(0, 0, 0) );}
-  75%  { transform:rotateX(-3deg) rotateY(-10deg) rotateZ(-7deg) ; 
-    filter: drop-shadow(-10px 5px 15px rgb(0, 0, 0) );}
-  100%  { transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg) ;}
+@keyframes drop-shadow-shade {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) ;
+  }
+  25% {
+    transform:  rotate(-3deg) ;
+    filter: drop-shadow(10px 5px 15px rgb(0, 0, 0));
+  }
+  75% {
+    transform:  rotate(3deg) ;
+    filter: drop-shadow(-10px 5px 15px rgb(0, 0, 0));
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg) ;
+  }
 }
 @keyframes rot {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-.container3 .image{
+.container3 .image {
   perspective: 1000px;
   perspective-origin: 50% 50%;
-  animation: Opa 4s infinite;
+  animation: drop-shadow-shade 4s infinite;
   animation-timing-function: ease-in-out;
-  filter: drop-shadow(-10px 5px 15px rgb(0, 0, 0) );
+  filter: drop-shadow(-10px 5px 15px rgb(0, 0, 0));
 }
 
-.top{
+.top {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgb(250, 227, 80,0.2);
+  background-color: rgb(250, 227, 80, 0.2);
   opacity: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
   z-index: 1;
-
 }
-a{
+a {
   z-index: 1;
-  display:inline-block;
-  width:200px;
-  height:70px;
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  border-radius:200px;
-  text-decoration:none;
+  display: inline-block;
+  width: 200px;
+  height: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 200px;
+  text-decoration: none;
   font-size: 25px;
-  font-weight:bold;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -342,21 +349,21 @@ a{
   background-color: rgb(250, 227, 80);
   color: rgb(255, 20, 2);
 }
-  
-.top:hover{
- opacity: 1;
+
+.top:hover {
+  opacity: 1;
 }
 
 /*font size changes for languages*/
-.chinese .offer{
+.chinese .offer {
   font-size: 35px;
 }
-.chinese .container3 .offer{
+.chinese .container3 .offer {
   font-size: 25px;
 }
-.italian .offer{
+.italian .offer {
   font-size: 45px;
 }
-.italian .container3 .offer{
+.italian .container3 .offer {
   font-size: 35px;
 }
