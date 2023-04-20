@@ -1,5 +1,4 @@
 import { HTMLClip, setCSSCore } from "@donkeyclip/motorcortex";
-import html from "./clip.html";
 import css from "./clip.css";
 import html from "./clip.html";
 import initParams from "./initParams";
@@ -8,7 +7,7 @@ import { hexagonCircle } from "./library/hexagonCircle";
 import { leftMove } from "./library/leftMove";
 import { line } from "./library/line";
 import AnimePluginDefinition from "@donkeyclip/motorcortex-anime";
-// setCSSCore(AnimePluginDefinition.CSSEffect);
+
 import { opacity } from "./library/opacity";
 import { ripples } from "./library/ripples";
 import { rotate } from "./library/rotate";
@@ -17,7 +16,7 @@ import { scale } from "./library/scale";
 import { svgDraw } from "./library/svgDraw";
 import { textReveal } from "./library/textReveal";
 import { topMove } from "./library/topMove";
-
+setCSSCore(AnimePluginDefinition.CSSEffect);
 export const clip = new HTMLClip({
   html,
   css,
