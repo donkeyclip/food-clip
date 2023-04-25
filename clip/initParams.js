@@ -2,7 +2,7 @@ export default [
   {
     value: {
       name: "Theofilos Papadopoulos",
-      category: "Chinese",
+      category: "Italian",
       city: "Thessaloniki",
       dishes: [
         {
