@@ -8,7 +8,7 @@ export default [
         {
           name: "Pizza Special",
           image:
-            "https://elisavetampatzidou.github.io/food-promo-clip/server/assets/pizza-special.png",
+            "https://donkeyclip.github.io/food-clip/server/assets/pizza-special.png",
           description: "With tomato sauce, gouda, mushrooms, pepper & bacon",
           price: "8.30",
           offer: "7.10",
@@ -17,7 +17,7 @@ export default [
         {
           name: "Pizza Margarita",
           image:
-            "https://elisavetampatzidou.github.io/food-promo-clip/server/assets/pizza-margarita.png",
+            "https://donkeyclip.github.io/food-clip/server/assets/pizza-margarita.png",
           description: "With tomato sauce & gouda",
           price: "7.40",
           offer: "5.90",
@@ -26,7 +26,7 @@ export default [
         {
           name: "Pizza Pepperoni",
           image:
-            "https://elisavetampatzidou.github.io/food-promo-clip/server/assets/pizza-pepperoni.png",
+            "https://donkeyclip.github.io/food-clip/server/assets/pizza-pepperoni.png",
           description: "With tomato sauce, gouda, pepperoni sausage",
           price: "7.80",
           offer: "6.60",
